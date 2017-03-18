@@ -1,4 +1,4 @@
-1. Crie um "Ol√° mundo!" em C.
+1. Crie um "Ol· mundo!" em C.
 
 #include <stdio.h>
 
@@ -9,7 +9,7 @@ int main(){
 return 0;
 }
 
-2. Crie um c√≥digo em C que pergunta ao usu√°rio o seu nome, e imprime no terminal "Ola " e o nome do usu√°rio. Por exemplo, considerando que o c√≥digo criado recebeu o nome de 'ola_usuario_1':
+2. Crie um cÛdigo em C que pergunta ao usu·rio o seu nome, e imprime no terminal "Ola " e o nome do usu·rio. Por exemplo, considerando que o cÛdigo criado recebeu o nome de 'ola_usuario_1':
 
 #include <stdio.h>
 #include <string.h>
@@ -19,13 +19,13 @@ char nome[20];
 	printf("Digite o seu nome:\n");
 	scanf ("%s", nome);
 
-	printf ("Ola, %s.\n", nome);
+	printf ("Ola, %s.", nome);
 
 return 0;
 }
 
 
-Para compila√ß√£o do arquivo, os seguintes comandos foram usados:
+Para compilaÁ„o do arquivo, os seguintes comandos foram usados:
 
 $ pwd
 $ cd Documentos
@@ -38,36 +38,36 @@ Digite o seu nome:
 Joyce
 Ola, Joyce.
 
-3. Apresente os comportamentos do c√≥digo anterior nos seguintes casos:
-(a) Se o usu√°rio insere mais de um nome.
+3. Apresente os comportamentos do cÛdigo anterior nos seguintes casos:
+(a) Se o usu·rio insere mais de um nome.
 		Digite o seu nome: Joyce Santos
 		Ola, Joyce.
-	(b) Se o usu√°rio insere mais de um nome entre par√™nteses. 
+	(b) Se o usu·rio insere mais de um nome entre parÍnteses. 
 		Digite o seu nome:
 		'Ola, "Joyce.
-	(c) Se √© usado um pipe. Por exemplo:
+	(c) Se È usado um pipe. Por exemplo:
 		$ echo Joyce | ./questao2
 		Digite o seu nome:
 		Ola, Joyce.
-	(d) Se √© usado um pipe com mais de um nome. Por exemplo:
+	(d) Se È usado um pipe com mais de um nome. Por exemplo:
 		$ echo Joyce Santos | ./questao2
 		Digite o seu nome: 
 		Ola, Joyce.
-	(e) Se √© usado um pipe com mais de um nome entre par√™nteses. Por exemplo:
+	(e) Se È usado um pipe com mais de um nome entre parÍnteses. Por exemplo:
 		$ echo "Joyce Santos" | ./questao2
 		Digite o seu nome:
 		Ola, Joyce.
-	(f) Se √© usado o redirecionamento de arquivo. Por exemplo:
+	(f) Se È usado o redirecionamento de arquivo. Por exemplo:
 
 $ echo Ola mundo cruel! > ola.txt
 $ ./questao2 < ola.txt
 
-Um arquivo ola.txt √© criado no diret√≥rio atual e dentro dele cont√©m a mensagem "Ola mundo cruel!".
+Um arquivo ola.txt È criado no diretÛrio atual e dentro dele contÈm a mensagem "Ola mundo cruel!".
 A seguinte mensagem aparece:
 Digite o seu nome: Ola, ola
 
 
-4.Crie um c√≥digo em C que recebe o nome do usu√°rio como um argumento de entrada (usando as vari√°veis argc e *argv[]), e imprime no terminal "Ola " e o nome do usu√°rio. Por exemplo, considerando que o c√≥digo criado recebeu o nome de 'ola_usuario_2':
+4.Crie um cÛdigo em C que recebe o nome do usu·rio como um argumento de entrada (usando as vari·veis argc e *argv[]), e imprime no terminal "Ola " e o nome do usu·rio. Por exemplo, considerando que o cÛdigo criado recebeu o nome de 'ola_usuario_2':
 
 #include <stdio.h>
 #include <string.h>
@@ -82,7 +82,7 @@ char nome[20];
 return 0;
 }
 
-Para compila√ß√£o:
+Para compilaÁ„o:
 $ gcc questao_04.c -o questao4
 $ ./questao4
 
@@ -90,34 +90,34 @@ No terminal:
 Digite o seu nome: Joyce
 Ola, Joyce
 
-5. Apresente os comportamentos do c√≥digo anterior nos seguintes casos:
-	(a) Se o usu√°rio insere mais de um nome.
+5. Apresente os comportamentos do cÛdigo anterior nos seguintes casos:
+	(a) Se o usu·rio insere mais de um nome.
 		Digite o seu nome: Joyce Santos
 		Ola, Joyce.
-	(b) Se o usu√°rio insere mais de um nome entre par√™nteses. Por exemplo:
+	(b) Se o usu·rio insere mais de um nome entre parÍnteses. Por exemplo:
 		Digite o seu nome: "Joyce Santos"
 		Ola, "Joyce.
-	(c) Se √© usado um pipe. Por exemplo:
+	(c) Se È usado um pipe. Por exemplo:
 		$ echo Joyce | ./questao5
 		Digite o seu nome:
 		Ola, Joyce.
-	(d) Se √© usado um pipe com mais de um nome. Por exemplo:
+	(d) Se È usado um pipe com mais de um nome. Por exemplo:
 		$ echo Joyce Santos | ./questao5
 		Digite o seu nome:
 		Ola, Joyce.
-	(e) Se √© usado um pipe com mais de um nome entre par√™nteses. Por exemplo:
+	(e) Se È usado um pipe com mais de um nome entre parÍnteses. Por exemplo:
 		$ echo "Joyce Santos" | ./questao5
 		Digite o seu nome: Joyce
 		Ola, Joyce.
-	(f) Se √© usado o redirecionamento de arquivo. Por exemplo:
+	(f) Se È usado o redirecionamento de arquivo. Por exemplo:
 		$ echo Ola mundo cruel! > ola.txt
 		$ ./questao4 < ola.txt
-Um arquivo ola.txt √© criado no diret√≥rio atual e dentro dele cont√©m a mensagem "Ola mundo cruel!".
+Um arquivo ola.txt È criado no diretÛrio atual e dentro dele contÈm a mensagem "Ola mundo cruel!".
 A seguinte mensagem aparece:
 Digite o seu nome: Ola, ola
  
 
-6. Crie um c√≥digo em C que faz o mesmo que o c√≥digo da quest√£o 4, e em seguida imprime no terminal quantos valores de entrada foram fornecidos pelo usu√°rio. Por exemplo, considerando que o c√≥digo criado recebeu o nome de 'ola_usuario_3':
+6. Crie um cÛdigo em C que faz o mesmo que o cÛdigo da quest„o 4, e em seguida imprime no terminal quantos valores de entrada foram fornecidos pelo usu·rio. Por exemplo, considerando que o cÛdigo criado recebeu o nome de 'ola_usuario_3':
 
 #include <stdio.h>
 #include <string.h>
@@ -138,7 +138,7 @@ Na tela:
 Numero de entradas: 3
 Ola, Santos
 
-7. Crie um c√≥digo em C que imprime todos os argumentos de entrada fornecidos pelo usu√°rio. Por exemplo, considerando que o c√≥digo criado recebeu o nome de 'ola_argumentos':
+7. Crie um cÛdigo em C que imprime todos os argumentos de entrada fornecidos pelo usu·rio. Por exemplo, considerando que o cÛdigo criado recebeu o nome de 'ola_argumentos':
 
 #include <stdio.h>
 #include <string.h>
@@ -156,23 +156,53 @@ return 0;
 }
 
 
-8. Crie uma fun√ß√£o que retorna a quantidade de caracteres em uma string, usando o seguinte prot√≥tipo:
+8. Crie uma funÁ„o que retorna a quantidade de caracteres em uma string, usando o seguinte protÛtipo: *
 
 	int Num_Caracs(char *string);
 
-Salve-a em um arquivo separado chamado 'num_caracs.c'. Salve o prot√≥tipo em um arquivo chamado 'num_caracs.h'. Compile 'num_caracs.c' para gerar o objeto 'num_caracs.o'.
+Salve-a em um arquivo separado chamado 'num_caracs.c'. Salve o protÛtipo em um arquivo chamado 'num_caracs.h'. Compile 'num_caracs.c' para gerar o objeto 'num_caracs.o'.
 
 #include <stdio.h>
 #include <string.h>
 
-int Num_Caracs(char *string){
+int Num_Caracs(char *argv[]){
     int total = 0;
-    while (string[total] != '\0'){
+    while (argv[total] != '\0'){
         total++;
     }
     return total;
 }
-int main(){
+
+9. Re-utilize o objeto criado na quest„o 8 para criar um cÛdigo que imprime cada argumento de entrada e a quantidade de caracteres de cada um desses argumentos. ** CORRIGIR
+
+#include <stdio.h>
+#include <string.h>
+
+int main(int argc, char *argv[]){
+
+int i, total;
+
+for (i = 0; i <= (argc - 1); i++){
+printf ("Argumentos: %s ", argv[i]);
+
+int num_caracs(char *argv[]);
+
+printf ("/ Numero de caracteres: %d\n", total);
+
+}
+
 
 return 0;
 }
+
+Para linkar os arquivos e chamar a funÁ„o criada na quest„o 9, os seguintes comandos foram utilizados no terminal:
+$ gcc -c questao_09.c
+$ gcc -c num_caracs.c
+$ gcc -o num_caracs questao_09.o num_caracs.o
+$ ./ num_caracs Joyce Santos
+
+No terminal:
+
+$ Argumentos: C:\User\Joyce\Destkop\SistemasEmbarcados\C\Aula3\num_caracs.exe / Numero de caracteres: 0
+$ Argumentos: Joyce / Numero de caracteres: 0
+$ Argumentos: Santos / Numero de caracteres: 0
